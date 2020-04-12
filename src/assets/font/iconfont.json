@@ -1,0 +1,86 @@
+{
+  "id": "1624842",
+  "name": "novel",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5835473",
+      "name": "加入书架",
+      "font_class": "jiarushujia",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "5071275",
+      "name": "书架",
+      "font_class": "shujia",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "7775070",
+      "name": "书签",
+      "font_class": "shuqian",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "9874523",
+      "name": "KHCFDC_首页",
+      "font_class": "shouye",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "859457",
+      "name": "首页",
+      "font_class": "home",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "587339",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "2529712",
+      "name": "目录、列表、更多、list",
+      "font_class": "sort",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "3775397",
+      "name": "目录",
+      "font_class": "mulu1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "468401",
+      "name": "上一页",
+      "font_class": "iconfontzuo",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "6241225",
+      "name": "下一页",
+      "font_class": "xiayiye",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "11006265",
+      "name": "目录",
+      "font_class": "mulu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}

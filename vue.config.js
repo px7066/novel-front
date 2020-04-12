@@ -13,7 +13,7 @@ const name = defaultSettings.title || 'novel' // page title
 // For example, Mac: sudo npm run
 // You can change the port by the following methods:
 // port = 9528 npm run dev OR npm run dev --port = 9528
-const port = process.env.npm_config_port || process.env.PORT || 8999 // dev port
+const port = process.env.npm_config_port || process.env.PORT || 8888 // dev port
 const loginPort = process.env.LOGIN_PORT || 9001
 const blogPort = process.env.BLOG_PORT || 9002
 const resourcePort = process.env.RESOURCE_PORT || 9003

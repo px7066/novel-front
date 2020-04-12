@@ -32,6 +32,14 @@ export function nextPage (param) {
   })
 }
 
+export function loadPage (param) {
+  return request({
+    url: '/md-resource-api/novel/loadPage',
+    method: 'get',
+    params: param
+  })
+}
+
 export function prevPage (param) {
   return request({
     url: '/md-resource-api/novel/prevPage',

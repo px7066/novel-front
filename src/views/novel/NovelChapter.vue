@@ -1,5 +1,13 @@
 <template>
   <div id="chapter">
+    <van-nav-bar
+      :title="novelName"
+      @click-left="back()"
+      @click-right="home()"
+    >
+      <van-icon class-prefix="icon-fanhui" class="iconfont"  slot="left"/>
+      <van-icon class-prefix="icon-shouye" class="iconfont"  slot="right"/>
+    </van-nav-bar>
     <van-cell v-for="item in list" :key="item.title" :value="item.title" @click="openContent(item.id)" is-link/>
     <van-pagination 
       v-model="currentPage" 
@@ -14,11 +22,13 @@
 <script>
 import Vue from 'vue'
 import { loadChapter, selectNovelChapterNumber } from '@/api/novel'
-import { Pagination, Cell } from 'vant'
+import { Pagination, Cell, NavBar, Icon } from 'vant'
 import 'vant/lib/index.css'
 
 Vue.use(Pagination)
 Vue.use(Cell)
+Vue.use(NavBar)
+Vue.use(Icon)
 
 export default {
   name : 'NovelChapter',
@@ -26,6 +36,7 @@ export default {
     this.novelName = this.$route.params.novelName
     this.loadTotalItem()
     this.loadData()
+    this.uuid = this.$store.getters.getUUID
   },
   methods: {
     loadTotalItem() {
@@ -58,6 +69,12 @@ export default {
     },
     openContent(id) {
       this.$router.push({path:`/novelContent/${id}`})
+    },
+    back() {
+      this.$router.go(-1)
+    },
+    home() {
+      this.$router.push({path:'/novel'})
     }
   },
   data() {
@@ -65,6 +82,7 @@ export default {
       currentPage: 1,
       novelName: '',
       totalItem: undefined,
+      uuid: undefined,
       list: []
     }
   }
